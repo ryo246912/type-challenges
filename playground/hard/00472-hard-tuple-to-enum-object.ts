@@ -39,7 +39,7 @@
 type Enum<T extends readonly string[], N extends boolean = false> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 const OperatingSystem = ['macOS', 'Windows', 'Linux'] as const
 const Command = ['echo', 'grep', 'sed', 'awk', 'cut', 'uniq', 'head', 'tail', 'xargs', 'shift'] as const

@@ -21,7 +21,7 @@
 type Concat<T, U> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 const tuple = [1] as const
 

@@ -21,7 +21,7 @@
 type LengthOfString<S extends string> = number
 
 /* _____________ テストケース _____________ */
-import type { Equal, IsTrue } from '@type-challenges/utils'
+import type { Equal, IsTrue } from '../../utils'
 
 type cases = [
   IsTrue<Equal<LengthOfString<''>, 0>>,

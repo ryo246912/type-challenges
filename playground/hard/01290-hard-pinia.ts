@@ -80,7 +80,7 @@
 declare function defineStore(store: unknown): unknown
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 const store = defineStore({
   id: '',

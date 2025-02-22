@@ -17,7 +17,7 @@
 type Combs<T extends any[]> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type ModifierKeys = ['cmd', 'ctrl', 'opt', 'fn']
 type CaseTypeOne = 'cmd ctrl' | 'cmd opt' | 'cmd fn' | 'ctrl opt' | 'ctrl fn' | 'opt fn'

@@ -15,7 +15,7 @@
 type Filter<T extends any[], P> = []
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type Falsy = false | 0 | '' | null | undefined
 

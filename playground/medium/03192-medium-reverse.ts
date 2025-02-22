@@ -22,7 +22,7 @@
 type Reverse<T> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<Reverse<[]>, []>>,

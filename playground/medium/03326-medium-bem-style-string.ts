@@ -19,7 +19,7 @@
 type BEM<B extends string, E extends string[], M extends string[]> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<BEM<'btn', ['price'], []>, 'btn__price'>>,

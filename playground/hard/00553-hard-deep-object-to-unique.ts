@@ -14,7 +14,7 @@
   例えば、
 
   ```ts
-  import { Equal } from '@type-challenges/utils';
+  import { Equal } from '../../utils';
 
   type Foo = { foo: 2; bar: { 0: 1 }; baz: { 0: 1 } };
 
@@ -41,7 +41,7 @@
 type DeepObjectToUniq<O extends object> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, IsFalse, IsTrue } from '@type-challenges/utils'
+import type { Equal, IsFalse, IsTrue } from '../../utils'
 
 type Quz = { quz: 4 }
 

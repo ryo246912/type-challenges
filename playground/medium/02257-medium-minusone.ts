@@ -22,7 +22,7 @@
 type MinusOne<T extends number> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<MinusOne<1>, 0>>,

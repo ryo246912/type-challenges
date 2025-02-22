@@ -19,7 +19,7 @@ type Bit = 1 | 0
 type BinaryAdd<A extends Bit[], B extends Bit[]> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<

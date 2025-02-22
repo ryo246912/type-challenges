@@ -23,7 +23,7 @@
 type Flip<T> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect, NotEqual } from '@type-challenges/utils'
+import type { Equal, Expect, NotEqual } from '../../utils'
 
 type cases = [
   Expect<Equal<{ a: 'pi' }, Flip<{ pi: 'a' }>>>,

@@ -21,7 +21,7 @@
 type InclusiveRange<Lower extends number, Higher extends number> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<InclusiveRange<200, 1>, []>>,

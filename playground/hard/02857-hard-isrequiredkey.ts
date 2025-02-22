@@ -23,7 +23,7 @@
 type IsRequiredKey<T, K extends keyof T> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<IsRequiredKey<{ a: number, b?: string }, 'a'>, true>>,

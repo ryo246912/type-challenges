@@ -18,7 +18,7 @@
 type Hanoi<N extends number, From = 'A', To = 'B', Intermediate = 'C'> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type Tests = [
   Expect<Equal<Hanoi<0>, []>>,

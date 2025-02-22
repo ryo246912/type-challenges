@@ -40,7 +40,7 @@ interface TreeNode {
 type InorderTraversal<T extends TreeNode | null> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 const tree1 = {
   val: 1,

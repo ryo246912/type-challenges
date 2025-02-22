@@ -23,7 +23,7 @@
 type MyParameters<T extends (...args: any[]) => any> = any
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 function foo(arg1: string, arg2: number): void {}
 function bar(arg1: boolean, arg2: { a: 'A' }): void {}

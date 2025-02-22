@@ -31,18 +31,18 @@ type ParseLiteral<T extends Token[]> = ParseResult<any, T>
 type Parse<T extends string> = Pure<ParseLiteral<Tokenize<T>>[0]>
 
 /* _____________ テストケース _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../../utils'
 
 type cases = [
   Expect<Equal<(
     Parse<`
       {
-        "a": "b", 
-        "b": false, 
+        "a": "b",
+        "b": false,
         "c": [true, false, "hello", {
-          "a": "b", 
+          "a": "b",
           "b": false
-        }], 
+        }],
         "nil": null
       }
     `>
@@ -87,7 +87,7 @@ type cases = [
   Expect<Equal<Parse<'{ 1: "world" }'>, never>>,
 
   Expect<Equal<Parse<`{ "hello
-  
+
   world": 123 }`>, never>>,
 ]
 
