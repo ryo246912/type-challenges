@@ -29,7 +29,7 @@
 
 /* _____________ ここにコードを記入 _____________ */
 
-type MyReadonly<T> = any
+type MyReadonly<T> = { readonly [K in keyof T] : T[K] }
 
 /* _____________ テストケース _____________ */
 import type { Equal, Expect } from '../../utils'
